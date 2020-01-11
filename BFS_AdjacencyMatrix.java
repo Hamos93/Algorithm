@@ -46,6 +46,7 @@ public class BFS_AdjacencyMatrix {
 			int u = Integer.parseInt(st.nextToken());
 			int v = Integer.parseInt(st.nextToken());
 			
+			// 입력 
 			if(u == -1 && v == -1) break;
 			
 			adjMatrix[u][v] = adjMatrix[v][u] = 1;
