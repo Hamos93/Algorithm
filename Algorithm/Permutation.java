@@ -5,7 +5,13 @@ public class Permutation {
 	private static int[] res;
 	private static boolean[] visit;
 	
-	// 순열(Permutation): 순서가 중요하고 (123 != 321), 중복을 허용하지 않는 경우
+	/* 
+	 * [순열(Permutation)]
+	 * 순서가 중요하고 (123 != 321), 중복을 허용하지 않는 경우
+	 * nPr = n! / (n-r) !
+	 * nPn = n!
+	 */
+	
 	private static void permutation(int n, int r, int depth){
 		if(depth == r){
 			System.out.println(Arrays.toString(res));
