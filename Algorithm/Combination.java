@@ -5,7 +5,12 @@ public class Combination {
 	private static int[] res;
 	private static boolean[] visit;
 	
-	// 조합(Combination): 순서가 중요하지 않고 (123 == 321), 중복을 허용하지 않는 경우
+	/*
+	 *  [조합(Combination)]
+	 *  순서가 중요하지 않고 (123 == 321), 중복을 허용하지 않는 경우
+	 *	nCr = nPr / r! = n! / r!(n-r)!
+	 */
+
 	private static void combination(int n, int r, int depth, int start){
 		if(depth == r){
 			System.out.println(Arrays.toString(res));
