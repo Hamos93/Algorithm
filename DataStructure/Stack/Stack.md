@@ -16,17 +16,6 @@
 
   - 예) 스택에 A, B, C, D 순으로 자료를 삽입 후 역순으로 D, C, B, A 순으로 꺼낼 수 있음
 
-    ​																					  D
-
-    ​																	C				C
-
-    ​						  						B				B				B
-
-    ​								A				A				A			    A											 
-
-    ​													       → 
-
-
 
 - 데이터를 제한적으로 접근할 수 있는 구조
   - 스택에서의 입출력은 맨 위에서만 일어나고 스택의 중간에서는 데이터를 삭제할 수 없음
@@ -55,8 +44,8 @@ end push()
     
 pop(s)
     if(top = 0) then underflow;
-	else{
-        return s(top);
+	else {
+      	return s(top);
         top <- top - 1;
     }
 end pop()
