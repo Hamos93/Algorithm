@@ -17,12 +17,12 @@ public class Stack {
 	}
 	
 	public int pop() {
-		if(isEmpty()) throw new IndexOutOfBoundsException();
+		if(isEmpty()) throw new ArrayIndexOutOfBoundsException();
 		else return stack[top--];
 	}
 	
 	public int peek() {
-		if(isEmpty()) throw new IndexOutOfBoundsException();
+		if(isEmpty()) throw new ArrayIndexOutOfBoundsException();
 		else return stack[top];
 	}
 	
