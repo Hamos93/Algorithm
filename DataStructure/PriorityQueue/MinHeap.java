@@ -47,7 +47,6 @@ class Heap {
 		heap.set(1, heap.get(heap.size() - 1));
 		heap.remove(heap.size() - 1);
 		
-		
 		/* 히프 재구성 -> key(부모노드) <= key(자식노드) */
 		int idx = 1;
 		while((idx * 2) <= heap.size() - 1) {
